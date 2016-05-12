@@ -14,6 +14,7 @@
 #import "WoController.h"
 UIColor *color;
 int PINGMU_KUAN;
+int PINGMU_GAO;
 @interface AppDelegate ()
 
 @end
@@ -26,6 +27,7 @@ int PINGMU_KUAN;
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[UIViewController alloc]init];
     PINGMU_KUAN=[[UIScreen mainScreen] bounds].size.width;
+    PINGMU_GAO=[[UIScreen mainScreen] bounds].size.height;
     [self.window makeKeyAndVisible];
     [self fengZhuangTabBar];
     

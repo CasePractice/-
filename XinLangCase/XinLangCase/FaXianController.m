@@ -9,7 +9,8 @@
 #import "FaXianController.h"
 extern UIColor*color;
 extern int PINGMU_KUAN;
-@interface FaXianController ()
+extern int PINGMU_GAO;
+@interface FaXianController ()<UIScrollViewDelegate>
 {
     UILabel*hongTiao;
 }
@@ -20,6 +21,13 @@ extern int PINGMU_KUAN;
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self fengZhuangDaoHangView];
+    UIScrollView*scrollView=[[UIScrollView alloc]initWithFrame:CGRectMake(0, 64, PINGMU_KUAN, PINGMU_GAO-64-49)];
+    scrollView.contentSize=CGSizeMake(PINGMU_KUAN*2, PINGMU_GAO-64-49);
+    scrollView.delegate=self;
+    scrollView.bounces=NO;
+    scrollView.pagingEnabled=YES;
+    scrollView.backgroundColor=[UIColor whiteColor];
+    [self.view addSubview:scrollView];
 }
 #pragma mark-封装DaoHang_View
 -(void)fengZhuangDaoHangView
@@ -73,10 +81,12 @@ extern int PINGMU_KUAN;
     [button setTitle:tiele forState:UIControlStateNormal];
     button.titleLabel.font=[UIFont systemFontOfSize:22];
 }
+#pragma mark-导航上的按钮点击事件
 -(void)zhuCeAnNiuDianJiShiJian:(UIButton*)sender
 {
     UIButton*reMen=(UIButton*)[self.view viewWithTag:2];
     UIButton*mingXing=(UIButton*)[self.view viewWithTag:3];
+   
     switch (sender.tag)
     {
         case 1:
@@ -86,13 +96,22 @@ extern int PINGMU_KUAN;
         {
             [reMen setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
             [mingXing setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-            //****
+            [UIView animateWithDuration:0.1 animations:^{
+                CGRect rect=hongTiao.frame;
+                rect.origin.x=sender.frame.origin.x;
+                hongTiao.frame=rect;
+            }];
         }
             break;
         case 3:
         {
             [reMen setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
             [mingXing setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+            [UIView animateWithDuration:0.1 animations:^{
+                CGRect rect=hongTiao.frame;
+                rect.origin.x=sender.frame.origin.x;
+                hongTiao.frame=rect;
+            }];
         }
             break;
         case 4:
