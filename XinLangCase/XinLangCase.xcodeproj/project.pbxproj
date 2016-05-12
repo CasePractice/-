@@ -31,7 +31,6 @@
 		04DB616C1CE424EC00791421 /* tabbar_profile_highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04DB61621CE424EC00791421 /* tabbar_profile_highlighted@2x.png */; };
 		04DB61701CE4284400791421 /* GengDuoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DB616E1CE4284400791421 /* GengDuoController.m */; };
 		04DB61711CE4284400791421 /* GengDuoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DB616F1CE4284400791421 /* GengDuoController.xib */; };
-		04DB61761CE43B1000791421 /* ZLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DB61741CE43B1000791421 /* ZLNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,8 +66,6 @@
 		04DB616D1CE4284400791421 /* GengDuoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GengDuoController.h; sourceTree = "<group>"; };
 		04DB616E1CE4284400791421 /* GengDuoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GengDuoController.m; sourceTree = "<group>"; };
 		04DB616F1CE4284400791421 /* GengDuoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GengDuoController.xib; sourceTree = "<group>"; };
-		04DB61731CE43B1000791421 /* ZLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLNavigationController.h; sourceTree = "<group>"; };
-		04DB61741CE43B1000791421 /* ZLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,8 +162,6 @@
 		04DB61721CE43A9D00791421 /* 子继承类 */ = {
 			isa = PBXGroup;
 			children = (
-				04DB61731CE43B1000791421 /* ZLNavigationController.h */,
-				04DB61741CE43B1000791421 /* ZLNavigationController.m */,
 			);
 			name = "子继承类";
 			sourceTree = "<group>";
@@ -261,7 +256,6 @@
 				04DB61701CE4284400791421 /* GengDuoController.m in Sources */,
 				04DB612C1CE417E700791421 /* AppDelegate.m in Sources */,
 				04DB61551CE4230700791421 /* WoController.m in Sources */,
-				04DB61761CE43B1000791421 /* ZLNavigationController.m in Sources */,
 				04DB61291CE417E700791421 /* main.m in Sources */,
 				04DB614B1CE422C900791421 /* XiaoXiController.m in Sources */,
 			);

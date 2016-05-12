@@ -12,6 +12,8 @@
 #import "GengDuoController.h"
 #import "FaXianController.h"
 #import "WoController.h"
+UIColor *color;
+int PINGMU_KUAN;
 @interface AppDelegate ()
 
 @end
@@ -23,6 +25,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[UIViewController alloc]init];
+    PINGMU_KUAN=[[UIScreen mainScreen] bounds].size.width;
     [self.window makeKeyAndVisible];
     [self fengZhuangTabBar];
     
@@ -61,9 +64,11 @@
     
     tabBarCont.viewControllers=@[shouYe,xiaoXi,gengDuo,faXian,wo];
     //设置所有Item的颜色
-    tabBarCont.tabBar.tintColor=[UIColor colorWithRed:252.0/255.0 green:110.0/255.0 blue:10.0/255.0 alpha:1];
+    color=[UIColor colorWithRed:252.0/255.0 green:110.0/255.0 blue:10.0/255.0 alpha:1];
+    tabBarCont.tabBar.tintColor=color;
     tabBarCont.selectedIndex=3;
     self.window.rootViewController=tabBarCont;
+    
 }
 -(void)gengDuoAnNiuDianJiShiJian
 {
