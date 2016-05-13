@@ -65,7 +65,7 @@ int PINGMU_GAO;
     UIButton*button=[UIButton buttonWithType:UIButtonTypeCustom];
     UIImage*image=[UIImage imageNamed:@"tabbar_compose_button@2x"];
     [button setBackgroundImage:image forState:UIControlStateNormal];
-    [button setImage:[UIImage imageNamed:@"tabbar_compose_icon_add_highlighted@2x"] forState:UIControlStateNormal];
+    [button setImage:[UIImage imageNamed:@"tabbar_compose_icon_add@2x"] forState:UIControlStateNormal];
     [button addTarget:self action:@selector(gengDuoAnNiuDianJiShiJian) forControlEvents:UIControlEventTouchUpInside];
     button.frame=CGRectMake(0, 0, image.size.width, image.size.height);
     button.center=tabBarCont.tabBar.center;

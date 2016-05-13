@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04D0EEF91CE632030032989D /* tabbar_compose_icon_add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D0EEF81CE632030032989D /* tabbar_compose_icon_add@2x.png */; };
 		04DB61291CE417E700791421 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DB61281CE417E700791421 /* main.m */; };
 		04DB612C1CE417E700791421 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DB612B1CE417E700791421 /* AppDelegate.m */; };
 		04DB612E1CE417E700791421 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DB612D1CE417E700791421 /* Assets.xcassets */; };
@@ -20,7 +21,6 @@
 		04DB61551CE4230700791421 /* WoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DB61531CE4230700791421 /* WoController.m */; };
 		04DB61561CE4230700791421 /* WoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DB61541CE4230700791421 /* WoController.xib */; };
 		04DB61631CE424EC00791421 /* tabbar_compose_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04DB61591CE424EC00791421 /* tabbar_compose_button@2x.png */; };
-		04DB61641CE424EC00791421 /* tabbar_compose_icon_add_highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04DB615A1CE424EC00791421 /* tabbar_compose_icon_add_highlighted@2x.png */; };
 		04DB61651CE424EC00791421 /* tabbar_discover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04DB615B1CE424EC00791421 /* tabbar_discover@2x.png */; };
 		04DB61661CE424EC00791421 /* tabbar_discover_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04DB615C1CE424EC00791421 /* tabbar_discover_selected@2x.png */; };
 		04DB61671CE424EC00791421 /* tabbar_home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04DB615D1CE424EC00791421 /* tabbar_home@2x.png */; };
@@ -34,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04D0EEF81CE632030032989D /* tabbar_compose_icon_add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_compose_icon_add@2x.png"; sourceTree = "<group>"; };
 		04DB61241CE417E700791421 /* XinLangCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XinLangCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DB61281CE417E700791421 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04DB612A1CE417E700791421 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,7 +55,6 @@
 		04DB61531CE4230700791421 /* WoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WoController.m; sourceTree = "<group>"; };
 		04DB61541CE4230700791421 /* WoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WoController.xib; sourceTree = "<group>"; };
 		04DB61591CE424EC00791421 /* tabbar_compose_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_compose_button@2x.png"; sourceTree = "<group>"; };
-		04DB615A1CE424EC00791421 /* tabbar_compose_icon_add_highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_compose_icon_add_highlighted@2x.png"; sourceTree = "<group>"; };
 		04DB615B1CE424EC00791421 /* tabbar_discover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_discover@2x.png"; sourceTree = "<group>"; };
 		04DB615C1CE424EC00791421 /* tabbar_discover_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_discover_selected@2x.png"; sourceTree = "<group>"; };
 		04DB615D1CE424EC00791421 /* tabbar_home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_home@2x.png"; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				04DB61591CE424EC00791421 /* tabbar_compose_button@2x.png */,
-				04DB615A1CE424EC00791421 /* tabbar_compose_icon_add_highlighted@2x.png */,
+				04D0EEF81CE632030032989D /* tabbar_compose_icon_add@2x.png */,
 				04DB615B1CE424EC00791421 /* tabbar_discover@2x.png */,
 				04DB615C1CE424EC00791421 /* tabbar_discover_selected@2x.png */,
 				04DB615D1CE424EC00791421 /* tabbar_home@2x.png */,
@@ -224,7 +224,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04DB61641CE424EC00791421 /* tabbar_compose_icon_add_highlighted@2x.png in Resources */,
 				04DB612E1CE417E700791421 /* Assets.xcassets in Resources */,
 				04DB616A1CE424EC00791421 /* tabbar_message_center_selected@2x.png in Resources */,
 				04DB61561CE4230700791421 /* WoController.xib in Resources */,
@@ -236,6 +235,7 @@
 				04DB61511CE422F000791421 /* FaXianController.xib in Resources */,
 				04DB61711CE4284400791421 /* GengDuoController.xib in Resources */,
 				04DB61671CE424EC00791421 /* tabbar_home@2x.png in Resources */,
+				04D0EEF91CE632030032989D /* tabbar_compose_icon_add@2x.png in Resources */,
 				04DB61631CE424EC00791421 /* tabbar_compose_button@2x.png in Resources */,
 				04DB61661CE424EC00791421 /* tabbar_discover_selected@2x.png in Resources */,
 				04DB61691CE424EC00791421 /* tabbar_message_center@2x.png in Resources */,
