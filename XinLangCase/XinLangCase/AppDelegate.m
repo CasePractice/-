@@ -53,6 +53,7 @@ int PINGMU_GAO;
     shouYe_Image=[shouYe_Image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     shouYe_Image_Selectde=[shouYe_Image_Selectde imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     shouYe.tabBarItem=[[UITabBarItem alloc]initWithTitle:@"首页" image:shouYe_Image selectedImage:shouYe_Image_Selectde];
+    UINavigationController*nav1=[[UINavigationController alloc]initWithRootViewController:shouYe];
     //消息Item
     XiaoXiController*xiaoXi=[XiaoXiController new];
     UIImage *xiaoXi_Image=[UIImage imageNamed:@"tabbar_message_center@2x"];
@@ -60,6 +61,7 @@ int PINGMU_GAO;
     xiaoXi_Image=[xiaoXi_Image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     xiaoXi_Image_Selectde=[xiaoXi_Image_Selectde imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     xiaoXi.tabBarItem=[[UITabBarItem alloc]initWithTitle:@"消息" image:xiaoXi_Image selectedImage:xiaoXi_Image_Selectde];
+    UINavigationController*nav2=[[UINavigationController alloc]initWithRootViewController:xiaoXi];
     //更多（中间的“+”）Item
     GengDuoController*gengDuo=[GengDuoController new];
     UIButton*button=[UIButton buttonWithType:UIButtonTypeCustom];
@@ -78,6 +80,7 @@ int PINGMU_GAO;
     faXian_Image=[faXian_Image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     faXian_Image_Selectde=[faXian_Image_Selectde imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     faXian.tabBarItem=[[UITabBarItem alloc]initWithTitle:@"发现" image:faXian_Image selectedImage:faXian_Image_Selectde];
+    UINavigationController*nav3=[[UINavigationController alloc]initWithRootViewController:faXian];
     //我Item
     WoController*wo=[WoController new];
     UIImage *wo_Image=[UIImage imageNamed:@"tabbar_profile@2x"];
@@ -85,8 +88,9 @@ int PINGMU_GAO;
     wo_Image=[wo_Image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     wo_Image_Selectde=[wo_Image_Selectde imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     wo.tabBarItem=[[UITabBarItem alloc]initWithTitle:@"我" image:wo_Image selectedImage:wo_Image_Selectde];
+    UINavigationController*nav4=[[UINavigationController alloc]initWithRootViewController:wo];
     
-    tabBarCont.viewControllers=@[shouYe,xiaoXi,gengDuo,faXian,wo];
+    tabBarCont.viewControllers=@[nav1,nav2,gengDuo,nav3,nav4];
     tabBarCont.selectedIndex=3;
     self.window.rootViewController=tabBarCont;
 }
